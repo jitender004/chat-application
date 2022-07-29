@@ -8,7 +8,14 @@ import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
 
 export default function Register() {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
   const navigate = useNavigate();
+
   const toastOptions = {
     position: "bottom-right",
     autoClose: 8000,
@@ -16,12 +23,6 @@ export default function Register() {
     draggable: true,
     theme: "dark",
   };
-  const [values, setValues] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
 
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
@@ -47,9 +48,9 @@ export default function Register() {
         toastOptions
       );
       return false;
-    } else if (password.length < 8) {
+    } else if (password.length < 5) {
       toast.error(
-        "Password should be equal or greater than 8 characters.",
+        "Password should be equal or greater than 5 characters.",
         toastOptions
       );
       return false;

@@ -140,7 +140,7 @@ const Container = styled.div`
     padding: 1rem 2rem;
     display: flex;
     background-color: #fff;
-    background-image:url('https://ibb.co/30vzqdC');
+    background-image: url("https://ibb.co/30vzqdC");
     flex-direction: column;
     gap: 1rem;
     overflow: auto;
