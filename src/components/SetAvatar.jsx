@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { Buffer } from "buffer";
-import Spinner from "../assets/Spinner.gif";
+//import Spinner from "../assets/Spinner.gif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
@@ -68,7 +68,7 @@ export default function SetAvatar() {
     <>
       {isLoading ? (
         <Container>
-          <img src={Spinner} alt="Spinner" className="Spinner" />
+          <img src={"https://acegif.com/wp-content/uploads/loading-38.gif"} alt="Spinner" className="Spinner" />
         </Container>
       ) : (
         <Container>

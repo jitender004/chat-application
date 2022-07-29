@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import applogo from "../assets/applogo.svg";
+import applogo2 from "../assets/applogo2.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
@@ -90,7 +90,7 @@ export default function Register() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={applogo} alt="applogo" />
+            <img src={applogo2} alt="applogo" />
             <h1>messanger</h1>
           </div>
           <input

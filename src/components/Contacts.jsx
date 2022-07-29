@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import applogo from "../assets/applogo.svg";
+import applogo2 from "../assets/applogo2.png";
 
 export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -22,7 +22,7 @@ export default function Contacts({ contacts, changeChat }) {
       {currentUserImage && currentUserImage && (
         <Container>
           <div className="brand">
-            <img src={applogo} alt="applogo" />
+            <img src={applogo2} alt="applogo" />
             <h3>messanger</h3>
           </div>
           <div className="contacts">
@@ -99,7 +99,7 @@ const Container = styled.div`
       }
     }
     .contact {
-      background-color: #ffffff34;
+      background-color: #2B3856;
       min-height: 5rem;
       cursor: pointer;
       width: 90%;
@@ -111,6 +111,8 @@ const Container = styled.div`
       transition: 0.5s ease-in-out;
       .avatar {
         img {
+          border: 2px solid #6F2DA8	;
+          border-radius: 50%;
           height: 3rem;
         }
       }
@@ -121,7 +123,13 @@ const Container = styled.div`
       }
     }
     .selected {
-      background-color: #9a86f3;
+      background-color: #6F2DA8;
+      .avatar{
+        img{
+          border: 2px solid white	;
+          border-radius: 50%;
+        }
+      }
     }
   }
 
@@ -130,9 +138,13 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    border-radius: 5px;
+    padding-right: 150px;
     .avatar {
       img {
+        border: 2px solid #6F2DA8	;
+        border-radius: 50%;
         height: 4rem;
         max-inline-size: 100%;
       }
