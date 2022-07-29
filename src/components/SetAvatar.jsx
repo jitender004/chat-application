@@ -73,7 +73,7 @@ export default function SetAvatar() {
       ) : (
         <Container>
           <div className="title-container">
-            <h1>Pick an Avatar as your profile picture</h1>
+            <h1>Pick an Profile pic of your choice!</h1>
           </div>
           <div className="avatars">
             {avatars.map((avatar, index) => {

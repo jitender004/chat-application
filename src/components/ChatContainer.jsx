@@ -141,8 +141,10 @@ const Container = styled.div`
   .chat-messages {
     padding: 1rem 2rem;
     display: flex;
+
   
     background-image:url('https://w0.peakpx.com/wallpaper/220/854/HD-wallpaper-whatsapp-black-abstract-abstract-digital-abstraction-abstracts-background-digital-pattern-texture.jpg');
+
     flex-direction: column;
     gap: 1rem;
     overflow: auto;
