@@ -119,13 +119,15 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     .user-details {
       display: flex;
       align-items: center;
       gap: 1rem;
       .avatar {
         img {
+          border: 2px solid #6F2DA8	;
+          border-radius: 50%;
           height: 3rem;
         }
       }
@@ -139,8 +141,8 @@ const Container = styled.div`
   .chat-messages {
     padding: 1rem 2rem;
     display: flex;
-    background-color: #fff;
-    background-image:url('https://ibb.co/30vzqdC');
+  
+    background-image:url('https://w0.peakpx.com/wallpaper/220/854/HD-wallpaper-whatsapp-black-abstract-abstract-digital-abstraction-abstracts-background-digital-pattern-texture.jpg');
     flex-direction: column;
     gap: 1rem;
     overflow: auto;
@@ -170,14 +172,21 @@ const Container = styled.div`
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #666666;
+        background-color: #191970;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #666666;
+        background-color:#008000;
       }
     }
   }
 `;
+
+
+//https://i.pinimg.com/236x/90/02/ba/9002babc630ae1340692736ebc7d7679.jpg
+// background-color: #fff;
+//https://ibb.co/30vzqdC
+//#737CA1 - Slate blue
+//

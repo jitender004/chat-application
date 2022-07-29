@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import applogo from "../assets/applogo.svg";
+import applogo2 from "../assets/applogo2.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
@@ -66,7 +66,7 @@ export default function Login() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={applogo} alt="applogo" />
+            <img src={applogo2} alt="applogo" />
             <h1>Messanger</h1>
           </div>
           <input
@@ -102,6 +102,7 @@ const FormContainer = styled.div`
   gap: 1rem;
   align-items: center;
   background-color: #131324;
+  background-image:url("");
   .brand {
     display: flex;
     align-items: center;
